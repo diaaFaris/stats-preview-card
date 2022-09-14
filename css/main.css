@@ -68,7 +68,7 @@ main picture {
     position: relative;
 }
 
-main picture::before {
+/* main picture::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -77,12 +77,14 @@ main picture::before {
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
 main picture img,
 main picture source {
     object-fit: cover;
     width: 100%;
+    opacity: 0.84;
+    mix-blend-mode: luminosity;
 }
 
 main .content {
@@ -143,7 +145,7 @@ main .content .stats li .title {
     margin-top: 0.3em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1150px) {
     :root {
         --fs-700: 2.2rem;
     }
@@ -161,7 +163,7 @@ main .content .stats li .title {
     main .content {
         width: 50%;
         text-align: left;
-        padding: 2em 7em;
+        padding: 4em;
     }
 
     main .content .stats {
